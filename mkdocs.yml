@@ -1,0 +1,46 @@
+site_name: Test website
+site_url: https://random/docs/test
+repo_url: https://github.com/JamesOliverRobinson/DocumentationSite/
+repo_name: GitHub repository
+docs_dir: doc
+
+nav:
+  - Usage:
+      - Introduction: index.md
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - toc:
+      permalink: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+  icon:
+    logo: material/file-excel-box
+
+extra_css:
+  - stylesheets/colors.css
+
+
