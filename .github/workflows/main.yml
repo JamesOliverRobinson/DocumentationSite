@@ -24,6 +24,7 @@ jobs:
 
       - name: Generate child site
         run: |
+          chmod +x ./scripts/generate-docs.sh
           ./scripts/generate-docs.sh \
             child-site
 
