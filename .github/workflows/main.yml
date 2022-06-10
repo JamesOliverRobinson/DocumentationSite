@@ -10,16 +10,24 @@ jobs:
     steps:
       - name: Checkout branch
         uses: actions/checkout@v2
+
       - name: Install python
         uses: actions/setup-python@v2
+
       - name: Install mkdocs
         run: |
           pip install mkdocs
           pip install mkdocs-material
+
       - name: Generate child site
         run: |
-          cd child-site; mkdocs build
+          cd child-site
+          mkdocs build
+          cd ..
           mkdir parent-site/doc/docs/child-site
           cp -a child-site/site/. parent-site/doc/docs/child-site
+
       - name: Deploy site
-        run: cd parent-site; mkdocs gh-deploy --force
+        run: |
+          cd parent-site
+          mkdocs gh-deploy --force
