@@ -30,4 +30,4 @@ jobs:
       - name: Deploy site
         run: |
           cd parent-site
-          mkdocs gh-deploy
+          mkdocs gh-deploy --force
