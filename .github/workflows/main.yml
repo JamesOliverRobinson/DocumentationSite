@@ -19,6 +19,9 @@ jobs:
           pip install mkdocs
           pip install mkdocs-material
 
+      - name: Quick ls
+        run: ls
+
       - name: Generate child site
         run: |
           ./.scripts/generate-docs.sh \
