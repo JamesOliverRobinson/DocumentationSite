@@ -1,12 +1,13 @@
-site_name: Test website
-site_url: https://random/docs/test
-repo_url: https://github.com/JamesOliverRobinson/DocumentationSite/
+site_name: Parent site
+repo_url: https://github.com/evooq/montblanc/tree/master/bank-product-shelf
 repo_name: GitHub repository
 docs_dir: doc
 
+use_directory_urls: false
+
 nav:
-  - Usage:
-      - Introduction: index.md
+  - Home: 'docs/index.md'
+
 
 plugins:
   - search

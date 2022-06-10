@@ -1,0 +1,47 @@
+site_name: Parent site
+repo_url: https://github.com/evooq/montblanc/tree/master/bank-product-shelf
+repo_name: GitHub repository
+docs_dir: doc
+
+use_directory_urls: false
+
+nav:
+  - Home: 'docss/index.md'
+
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - toc:
+      permalink: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+  icon:
+    logo: material/file-excel-box
+
+extra_css:
+  - stylesheets/colors.css
+
+
