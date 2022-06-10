@@ -16,4 +16,4 @@ jobs:
       - run: cd child-site; mkdocs build
       - run: mkdir parent-site/doc/docs/child-site
       - run: cp -a child-site/site/. parent-site/doc/docs/child-site
-      - run: cd parent-site; mkdocs gh-deploy -f
+      - run: cd parent-site; mkdocs gh-deploy --force
