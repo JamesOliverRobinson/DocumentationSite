@@ -21,7 +21,7 @@ jobs:
 
       - name: Generate child site
         run: |
-          ./scripts/generate-docs.sh \
+          ./.scripts/generate-docs.sh \
                       child-site
 
       - name: Deploy site
