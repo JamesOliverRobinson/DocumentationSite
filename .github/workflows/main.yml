@@ -14,7 +14,6 @@ jobs:
       - run: pip install mkdocs
       - run: pip install mkdocs-material
       - run: cd child-site; mkdocs build
-      - run: ls
-      - run: mkdir ../parent-site/doc/docs/child-site
-      - run: cp -a site/. ../parent-site/doc/docs/child-site
-      - run: cd ../parent-site; mkdocs gh-deploy
+      - run: mkdir parent-site/doc/docs/child-site
+      - run: cp -a child-site/site/. parent-site/doc/docs/child-site
+      - run: cd parent-site; mkdocs gh-deploy
