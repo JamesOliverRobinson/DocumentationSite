@@ -1,4 +1,4 @@
-site_name: Parent site
+site_name: Child site
 repo_url: https://github.com/evooq/montblanc/tree/master/bank-product-shelf
 repo_name: GitHub repository
 docs_dir: doc
