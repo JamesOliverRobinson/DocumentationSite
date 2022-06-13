@@ -1,8 +1,5 @@
 name: publish-documentation
 
-on:
-  push:
-    branches: [ master ]
 
 jobs:
   deploy:
