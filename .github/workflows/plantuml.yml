@@ -12,8 +12,6 @@ jobs:
         uses: actions/setup-java@v3
         with:
           java-version: '11'
-          distribution: zulu
-          cache: gradle
       - name: Install graphviz
         run: sudo apt install graphviz
 
