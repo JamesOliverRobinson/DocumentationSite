@@ -19,7 +19,7 @@ jobs:
         run: sudo apt install graphviz
       - name: Get jar
         run: |
-          curl -H "Accept: application/zip" https://sourceforge.net/projects/plantuml/files/latest/download > myfile.jar
+          wget https://kumisystems.dl.sourceforge.net/project/plantuml/1.2022.5/plantuml.1.2022.5.jar -o myfile.jar
       - name: Check present
         run: ls
       - name: generate
