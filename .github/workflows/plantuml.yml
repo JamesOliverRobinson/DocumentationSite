@@ -15,5 +15,8 @@ jobs:
           distribution: zulu
       - name: Install graphviz
         run: sudo apt install graphviz
+      - name: Get jar
+        run: |
+          curl -H "Accept: application/zip" https://sourceforge.net/projects/plantuml/files/plantuml.jar/download > myfile.jar
 
 
