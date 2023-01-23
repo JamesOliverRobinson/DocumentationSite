@@ -8,9 +8,6 @@ jobs:
       - name: Checkout branch
         uses: actions/checkout@v2
 
-      - name: Install python
-        uses: actions/setup-python@v3
-
       - name: Install mkdocs
         run: |
           pip install mkdocs
