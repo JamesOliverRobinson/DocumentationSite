@@ -15,7 +15,7 @@ jobs:
         with:
           java-version: '11'
           distribution: zulu
-      - name: Install graphviz
+      - name: Install graphvizzz
         run: sudo apt install graphviz
       - name: Get jar
         run: |
