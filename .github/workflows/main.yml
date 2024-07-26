@@ -19,12 +19,5 @@ jobs:
       - name: Quick ls
         run: ls
 
-      - name: Generate child site
-        run: |
-          ./scripts/generate-docs.sh \
-            child-site
-
       - name: Deploy site
-        run: |
-          cd parent-site
-          mkdocs gh-deploy --force
+        run: mkdocs gh-deploy --force

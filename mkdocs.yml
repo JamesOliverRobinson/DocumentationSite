@@ -1,0 +1,6 @@
+site_name: Valedocode Documentation
+nav:
+  - Home: about.md
+  - Guide Catalogue: index.md
+theme: readthedocs
+
