@@ -1,6 +1,8 @@
 site_name: Valedocode Documentation
+repo_url: https://github.com/JamesOliverRobinson/DocumentationSite
+repo_name: GitHub repository
 nav:
-  - Home: about.md
-  - Guide Catalogue: index.md
+  - Home: index.md
+  - Guide Catalogue: about.md
 theme: readthedocs
 
